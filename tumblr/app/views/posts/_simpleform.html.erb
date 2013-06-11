@@ -1,0 +1,10 @@
+<%= simple_form_for @post do |f| %>
+
+	<%= f.input :title, label: "Post title" %>
+	<%= f.input :post_type %>
+	<%= f.input :image, as: :file %>
+	<%= f.input :tags %>
+
+	<%= f.button :submit %>
+
+<% end %>
